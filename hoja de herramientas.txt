@@ -1,0 +1,13 @@
+HERRAMIENTAS PARA EL PROYECTO FACTURADOR
+
+
+Compilar:D:\EEDD\Facturador>..\jdk-25.0.1\bin\javac -encoding UTF-8 -d compilados fuentes\Facturador.java
+
+Ejecutar:
+..\jdk-25.0.1\bin\java -cp compilados Facturador
+
+Compilar test
+..\jdk-25.0.1\bin\javac -encoding UTF-8 -d compilados -cp compilados;test\lib\junit-platform-console-standalone-1.9.2.jar test\FacturadorTest.java
+
+Ejecutar test
+..\jdk-25.0.1\bin\java -jar test\lib\junit-platform-console-standalone-1.9.2.jar -classpath compilados;test\compilados --scan-classpath
