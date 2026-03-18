@@ -6,5 +6,13 @@ public class Alumno{
 
     public Alumno(String nombre){
         this.nombre = nombre;
+        this.calificaciones = new ArrayList<>();
+    }
+
+    public void agregarCalificacion(Double calificacion){
+        this.calificaciones.add(calificacion);
+    }
+    public List<Double> getCalificaciones(){
+        return this.calificaciones;
     }
 }
